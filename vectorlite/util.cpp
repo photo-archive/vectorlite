@@ -28,6 +28,8 @@ std::optional<std::string_view> DetectSIMD() {
   return "AVX";
 #elif defined(USE_AVX512)
   return "AVX512";
+#elif defined(__aarch64__) || defined(_M_ARM64)
+  return "NEON";
 #else
   return std::nullopt;
 #endif
