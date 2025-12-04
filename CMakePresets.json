@@ -3,7 +3,7 @@
     "configurePresets": [
         {
             "name": "dev",
-            "toolchainFile": "vcpkg/scripts/buildsystems/vcpkg.cmake",
+            "toolchainFile": "$env{HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake",
             "binaryDir": "${sourceDir}/build/dev",
             "generator": "Ninja",
             "cacheVariables": {
@@ -13,7 +13,7 @@
         },
         {
             "name": "release",
-            "toolchainFile": "vcpkg/scripts/buildsystems/vcpkg.cmake",
+            "toolchainFile": "$env{HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake",
             "binaryDir": "${sourceDir}/build/release",
             "generator": "Ninja",
             "cacheVariables": {
